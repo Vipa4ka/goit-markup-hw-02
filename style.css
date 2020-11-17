@@ -41,8 +41,8 @@ a {
 /* логотип шапки */
 .logo {
   color: var(--accent-color);
-  font-family: Raleway;
-  font-weight: bold;
+  font-family: Raleway, Arial;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -59,12 +59,13 @@ a {
   letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
+.site-nav .link:focus,
+.auth a:hover,
+.auth a:focus,
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
 /*auth*/
 .auth a {
   font-style: normal;
@@ -73,10 +74,6 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.auth a:hover,
-.auth a:focus {
-  color: var(--accent-color);
 }
 
 /* секции */
@@ -92,7 +89,7 @@ a {
   text-transform: uppercase;
 }
 .section {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -100,7 +97,7 @@ a {
 .section-title {
   color: var(--title-text-color);
   background-color: var(--background-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -108,7 +105,7 @@ a {
 }
 .work .work-title {
   color: var(--title-text-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -121,7 +118,7 @@ a {
 .our-team h2,
 h3 {
   color: var(--title-text-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -142,7 +139,7 @@ h3 {
   background: var(--background-hero);
 }
 .cell {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -158,8 +155,9 @@ h3 {
 }
 /* лого подвала */
 .logo-footer {
+  font-family: Raleway, arial;
   color: var(--accent-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -172,32 +170,10 @@ h3 {
 .button {
   color: var(--title-text-color);
   background: var(--second-color);
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
-}
-.button.primary {
-  color: var(--primary-bg-color);
-  background: var(--accent-color);
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-}
-
-.button-hero {
-  color: var(--primary-bg-color);
-  background: var(--accent-color);
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
 }
 .button:hover,
 .button:focus {
@@ -205,17 +181,28 @@ h3 {
   background: var(--accent-color);
 }
 
+.button-hero {
+  color: var(--primary-bg-color);
+  background: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
 /* Портфолио */
 
 .partition h2 {
   color: var(--title-text-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .partition p {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
